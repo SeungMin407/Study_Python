@@ -119,7 +119,8 @@ def solution(maps):
 
 DFS는 시작 정점에서 출발하여 인접한 정점들을 재귀적(혹은 스택 이용)으로 방문하며, 이미 방문한 정점은 다시 방문하지 않고, 각 분기(branch)마다 가능한 가장 깊은 정점(멀리 있는 노드)까지 탐색한 뒤, 더 이상 갈 곳이 없으면 되돌아가(backtracking) 다른 경로를 탐색하는 알고리즘이다.
 
-## **DFS 알고리즘 구현**
+DFS 알고리즘 구현
+
 ```python
 def dfs(y, x, ey, ex, maps, visited, cost, min_cost):
     # 출구 좌표에 도달하면 최솟값 갱신
