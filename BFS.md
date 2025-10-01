@@ -6,7 +6,8 @@
 
 # **입출력 예** :
 
-![image.png](attachment:d5b150b2-a5d8-45a8-99be-01570c8c4e39:image.png)
+<img width="871" height="610" alt="image" src="https://github.com/user-attachments/assets/93563351-91fd-458c-a4b0-caa5df2434a0" />
+
 
 maps = ["SOOOL","XXXXO","OOOOO","OXXXX","OOOOE"]
 
@@ -22,29 +23,29 @@ BFS는 시작 노드에서 가까운 노드부터 차례대로 탐색하는 방�
 
 ### 동작 과정
 
-![image.png](attachment:09f2c94e-5c45-409d-b08f-401ebe4dfedb:image.png)
+<img width="885" height="390" alt="image" src="https://github.com/user-attachments/assets/54d98e59-0ebf-4863-b8f0-0c79dbd0e640" />
 
 다음과 같은 경로가 있을 때, 초기 상태는 큐에 1번 노드가 들어가 있는 상태이다.
 
-![image.png](attachment:bc04c77a-7a8a-4f14-8818-0f976743fed8:image.png)
+<img width="886" height="415" alt="image" src="https://github.com/user-attachments/assets/87c266a3-133e-4b2e-b5be-8af512cb1e92" />
 
-![image.png](attachment:750c7ba2-2385-4367-9901-8d9fb700d6b4:image.png)
+<img width="883" height="421" alt="image" src="https://github.com/user-attachments/assets/0ad72f2e-b765-4367-9bbf-53190cea8e08" />
 
 큐에서 1번 노드를 꺼내고 인접한 2, 3번 노드를 넣는다.
 
-![image.png](attachment:574ca5e1-586a-438a-b09f-5bca66152a82:image.png)
+<img width="883" height="428" alt="image" src="https://github.com/user-attachments/assets/c487b577-57f7-4360-b040-6d6a6cd2437a" />
 
 2번 노드를 꺼내고 인접한 8번 노드를 넣는다. 큐에서 값을 꺼낼 때, 순차적 탐색을 위해 첫 번째 자료를 꺼내고, 값을 넣을 때는 마지막 인덱스에 넣는다.
 
-![image.png](attachment:4de77492-a2cf-4651-9e25-a12b764675e5:image.png)
+<img width="894" height="422" alt="image" src="https://github.com/user-attachments/assets/78e8fe45-b8ee-4869-8cd1-d950d3abebb4" />
 
 3번 노드를 큐에서 꺼내고 4, 5번 노드를 넣는다. 이후 8번 노드를 꺼내고, 6, 7번 노드를 넣는다.
 
-![image.png](attachment:7b8c7eda-6b86-4cd6-894d-116191802e04:image.png)
+<img width="859" height="411" alt="image" src="https://github.com/user-attachments/assets/ee53e5a4-7c3e-43ba-9029-2d8d22a667d0" />
 
 더 이상 탐색할 노드가 없으므로 큐에서 값을 순차적으로 꺼낸다.
 
-![image.png](attachment:511b4e78-bfda-4884-8787-1285cb213a42:image.png)
+<img width="845" height="425" alt="image" src="https://github.com/user-attachments/assets/9b0999d6-edea-42b0-9633-9930b1e8c7eb" />
 
 큐에 값이 없으면 프로그램은 종료된다.
 
@@ -115,7 +116,7 @@ def solution(maps):
 
 ## **DFS(Depth-First Search) 알고리즘**
 
-![image.png](attachment:fef83230-486e-4a71-bc43-d51698ccd2b0:image.png)
+<img width="812" height="559" alt="image" src="https://github.com/user-attachments/assets/6986aa80-3653-47e7-8953-c179a61587d1" />
 
 DFS는 시작 정점에서 출발하여 인접한 정점들을 재귀적(혹은 스택 이용)으로 방문하며, 이미 방문한 정점은 다시 방문하지 않고, 각 분기(branch)마다 가능한 가장 깊은 정점(멀리 있는 노드)까지 탐색한 뒤, 더 이상 갈 곳이 없으면 되돌아가(backtracking) 다른 경로를 탐색하는 알고리즘이다.
 
