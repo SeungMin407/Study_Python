@@ -72,7 +72,7 @@ data = {
 }
 
 # pickle 파일로 저장 (바이너리 모드)
-with open("data.pkl", "wb") as f:
+with open("data.pkl", "wb") as f: #파일 확장자 상관 없음
     pickle.dump(data, f)
 
 print("객체 저장 완료 ✅")
