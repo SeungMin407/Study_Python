@@ -10,7 +10,7 @@
  ------------
  # 1. json
  1️⃣ 파일에 저장하기(json.dump)
-```
+```ruby
 import json
 
 data = {
@@ -23,7 +23,7 @@ with open("data.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
 ```
 2️⃣ 파일에서 불러오기 (json.load)
-```
+```ruby
 import json
 
 with open("data.json", "r", encoding="utf-8") as f:
@@ -61,7 +61,7 @@ print(loaded_data)
 # 2. pickle
 
 1️⃣ 파일에 저장하기 (pickle.dump)
-```
+```ruby
 import pickle
 
 # 저장할 객체 (클래스, 리스트, 딕셔너리 등)
@@ -78,7 +78,7 @@ with open("data.pkl", "wb") as f:
 print("객체 저장 완료 ✅")
 ```
 2️⃣ 파일에서 불러오기 (pickle.load)
-```
+```ruby
 import pickle
 
 with open("data.pkl", "rb") as f:
