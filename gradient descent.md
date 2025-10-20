@@ -9,14 +9,14 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 <img width="827" height="197" alt="image" src="https://github.com/user-attachments/assets/ee9e087b-9f38-4111-9c03-c93f1a55d9af" />
 <img width="477" height="141" alt="image" src="https://github.com/user-attachments/assets/a29e25d2-8be4-495c-9cfd-bacd52251e21" />
 
-- \(\theta\) : 모델 파라미터  
-- \(\eta\) : 학습률(learning rate)  
-- \(J(\theta)\) : 손실함수  
-- \(\nabla_\theta J(\theta)\) : 파라미터 \(\theta\)에 대한 손실함수의 기울기  
+- $\theta$ : 모델 파라미터  
+- $\eta$ : 학습률(learning rate)  
+- $J(\theta)$ : 손실함수  
+- $\nabla_\theta J(\theta)$ : 파라미터 $\theta$에 대한 손실함수의 기울기
 
 ### 2. 학습률(learning rate)
-- 학습률 \(\eta\)는 한 번 업데이트 시 파라미터가 이동하는 **크기**를 결정합니다.
-- 너무 크면 최소값을 지나치며 발산할 수 있고, 너무 작으면 수렴 속도가 느립니다.
+- 학습률 $\eta$는 한 번 업데이트 시 파라미터가 이동하는 크기를 결정한다.
+- 너무 크면 최소값을 지나치며 발산할 수 있고, 너무 작으면 수렴 속도가 느리다.
 
 ### 3. 경사하강법의 종류
 1. **Batch Gradient Descent (배치 경사하강법)**  
