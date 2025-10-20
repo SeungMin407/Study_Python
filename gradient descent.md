@@ -77,7 +77,7 @@ def gradient_descent_anlysis(X, y, theta, eta):
 
     return theta_path
 
-theta_path_gd = gradient_descent_anlysis(X, y, np.random.randn(2,1), eta=0.1)
+theta_path_gd = gradient_descent_anlysis(X, y, np.random.randn(2,1), eta=0.1)```
 
 <img width="536" height="442" alt="image" src="https://github.com/user-attachments/assets/3c598306-9284-4780-ba0b-09d090512fc2" />
 
