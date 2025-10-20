@@ -42,7 +42,7 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 
 ### 5. 간단한 파이썬 예제(배치 경사하강법)
 
-```python
+```
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -77,7 +77,8 @@ def gradient_descent_anlysis(X, y, theta, eta):
 
     return theta_path
 
-theta_path_gd = gradient_descent_anlysis(X, y, np.random.randn(2,1), eta=0.1)```
+theta_path_gd = gradient_descent_anlysis(X, y, np.random.randn(2,1), eta=0.1)
+```
 
 <img width="536" height="442" alt="image" src="https://github.com/user-attachments/assets/3c598306-9284-4780-ba0b-09d090512fc2" />
 
