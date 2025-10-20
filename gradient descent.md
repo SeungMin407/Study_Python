@@ -42,7 +42,7 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 
 ### 5. 간단한 파이썬 예제(배치 경사하강법)
 
-```
+```ruby
 import numpy as np
 import matplotlib.pyplot as plt
 
