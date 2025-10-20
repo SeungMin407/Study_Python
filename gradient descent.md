@@ -41,29 +41,35 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
   학습률을 점진적으로 줄이는 **learning rate decay**나 적응형 학습률(Adam, RMSprop 등)을 활용하면 수렴을 안정화할 수 있습니다.
 
 ### 5. 간단한 파이썬 예제(배치 경사하강법)
-```
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+theta_gt = [5, 3]  # 실제 theta
+
 X = 2 * np.random.rand(100, 1)   # X ~ Uniform (0, 2)
 y = theta_gt[0] + theta_gt[1] * X + np.random.randn(100, 1)
-def gradient_descent_anlysis( X, y, theta, eta ):
 
+def gradient_descent_anlysis(X, y, theta, eta):
     theta_path = []
     plt.plot(X, y, "b.")
 
     n_iterations = 100
     m = np.size(y)
-    X_c = np.c_[ np.ones((m,1)), X ]
+    X_c = np.c_[np.ones((m,1)), X]
     L_pt = np.array([0, 2])
-    L_pt_c = np.c_[ np.ones((2,1)), L_pt ]
+    L_pt_c = np.c_[np.ones((2,1)), L_pt]
 
-    for iteration in range(n_iterations) :
-        gradients = 2/m * X_c.T @ ( X_c @ theta - y )
+    for iteration in range(n_iterations):
+        gradients = 2/m * X_c.T @ (X_c @ theta - y)
         theta = theta - eta * gradients
         theta_path.append(theta)
         y_predict = L_pt_c @ theta
-        if iteration == 0 :
-          plt.plot(L_pt, y_predict, 'g--')
-        elif iteration < 10 :
-          plt.plot(L_pt, y_predict, 'r')
+        if iteration == 0:
+            plt.plot(L_pt, y_predict, 'g--')
+        elif iteration < 10:
+            plt.plot(L_pt, y_predict, 'r')
 
     plt.xlabel("$x_1$", fontsize=18)
     plt.axis([0, 2, 0, 15])
@@ -71,8 +77,7 @@ def gradient_descent_anlysis( X, y, theta, eta ):
 
     return theta_path
 
-theta_path_gd = gradient_descent_anlysis( X, y, np.random.randn(2,1), eta=0.1)
-'''
+theta_path_gd = gradient_descent_anlysis(X, y, np.random.randn(2,1), eta=0.1)
 
 <img width="536" height="442" alt="image" src="https://github.com/user-attachments/assets/3c598306-9284-4780-ba0b-09d090512fc2" />
 
