@@ -3,13 +3,11 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 
 ### 1. 기본 아이디어
 경사하강법의 핵심은 **손실함수(Loss function)의 기울기(gradient)를 이용하여 파라미터를 반복적으로 업데이트**하는 것입니다.  
-즉, 현재 위치에서 손실이 가장 빠르게 감소하는 방향으로 조금씩 이동하는 방식입니다.
+즉, 현재 위치에서 손실이 가장 빠르게 감소하는 방향으로 조금씩 이동하는 방식이다.
 
-수식으로 나타내면 다음과 같습니다:
-
-\[
-\theta := \theta - \eta \cdot \nabla_\theta J(\theta)
-\]
+대표적인 손실함수인 **MSE**를 미분하는 과정은 다음과 같다.
+<img width="827" height="197" alt="image" src="https://github.com/user-attachments/assets/ee9e087b-9f38-4111-9c03-c93f1a55d9af" />
+<img width="477" height="141" alt="image" src="https://github.com/user-attachments/assets/a29e25d2-8be4-495c-9cfd-bacd52251e21" />
 
 - \(\theta\) : 모델 파라미터  
 - \(\eta\) : 학습률(learning rate)  
