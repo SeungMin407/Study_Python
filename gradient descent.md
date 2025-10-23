@@ -11,7 +11,7 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 <img width="477" height="141" alt="image" src="https://github.com/user-attachments/assets/a29e25d2-8be4-495c-9cfd-bacd52251e21" />
 
 - $\theta$ : 모델 파라미터  
-- $\eta$ : 학습률(learning rate)  
+- $\alpha$ : 학습률(learning rate)  
 - $J(\theta)$ : 손실함수  
 - $\nabla_\theta J(\theta)$ : 파라미터 $\theta$에 대한 손실함수의 기울기
 
