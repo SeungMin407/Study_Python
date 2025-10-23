@@ -6,7 +6,8 @@ Gradient Descent(경사하강법)는 머신러닝과 딥러닝에서 **모델의
 즉, 현재 위치에서 손실이 가장 빠르게 감소하는 방향으로 조금씩 이동하는 방식이다.
 
 대표적인 손실함수인 **MSE**를 미분하는 과정은 다음과 같다.
-<img width="827" height="197" alt="image" src="https://github.com/user-attachments/assets/ee9e087b-9f38-4111-9c03-c93f1a55d9af" />
+<img width="642" height="365" alt="image" src="https://github.com/user-attachments/assets/9175f63b-2664-495f-98f8-bd055cf53ec9" />
+
 <img width="477" height="141" alt="image" src="https://github.com/user-attachments/assets/a29e25d2-8be4-495c-9cfd-bacd52251e21" />
 
 - $\theta$ : 모델 파라미터  
