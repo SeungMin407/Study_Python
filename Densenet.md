@@ -42,10 +42,12 @@ transition layer의 구조는 다음과 같다. (batch normalization) -> (1x1 Co
 <img width="826" height="396" alt="image" src="https://github.com/user-attachments/assets/8a65aae1-f7e0-482e-b32f-4747b777d4da" />
 
 ---
-# 4 성능
+# 4. 성능
 
 <img width="615" height="300" alt="image" src="https://github.com/user-attachments/assets/863115ef-355b-4a0f-a4a0-6a9d2ada5ce2" />
 
 DenseNet은 각 레이어가 이전의 모든 feature map을 입력으로 concat한다. 즉, 이미 계산된 특징들을 다시 계산하지 않고 그대로 사용하기 때문에 ResNet에 비해 적은 수의 파라미터를 가지고 연산량도 적다. 그러나 그래프에서 알 수 있듯, 에러는 비슷하다. 
 
-
+---
+# 5. 참조
+HUANG, Gao, et al. Densely connected convolutional networks. In: Proceedings of the IEEE conference on computer vision and pattern recognition. 2017. p. 4700-4708.
