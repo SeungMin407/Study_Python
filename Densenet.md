@@ -1,6 +1,6 @@
 ## DenseNet (Densely Connected Convolutional Network)
 ---
-#1. 개요
+# 1. 개요
 DenseNet은 2017년 CVPR에서 발표된 CNN 구조로, 이름처럼 모든 층이 서로 ‘조밀하게(Dense)’ 연결된 네트워크이다.
 기존의 ResNet은 skip-connection 방식을 통해 활성화 함수로 인한 비선형 변환을 우회한다. 비선형 변환은 모델이 복잡한 형태의 비선형 데이터들을 학습 할 수 있게 하지만, 네트워크가 깊어질수록 기울기 소실 문제가 발생한다.
 
@@ -9,7 +9,7 @@ DenseNet은 2017년 CVPR에서 발표된 CNN 구조로, 이름처럼 모든 층�
 이러한 skip-connection을 통해 identity(원천 정보)가 직접적으로 뒤로 더해져 전달된다. 이러한 덧셈연산은 정보의 흐름을 방해할 여지가 있다.
 
 ---
-#2. 해결 아이디어
+# 2. 해결 아이디어
 
 <img width="583" height="506" alt="image" src="https://github.com/user-attachments/assets/7ca0d15f-4483-4299-a7ee-f224856f1b65" />
 
@@ -37,12 +37,12 @@ ResNet은 덧셈을 하므로 입력과 출력의 shape가 같아야 한다.
 transition layer의 구조는 다음과 같다. (batch normalization) -> (1x1 Conv) -> (2x2 average pooling)
 
 ---
-#3. 구조
+# 3. 구조
 
 <img width="826" height="396" alt="image" src="https://github.com/user-attachments/assets/8a65aae1-f7e0-482e-b32f-4747b777d4da" />
 
 ---
-#4 성능
+# 4 성능
 
 <img width="615" height="300" alt="image" src="https://github.com/user-attachments/assets/863115ef-355b-4a0f-a4a0-6a9d2ada5ce2" />
 
