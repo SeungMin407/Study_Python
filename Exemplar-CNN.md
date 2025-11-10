@@ -29,12 +29,12 @@ Exemplar-CNN은 2014년 Dosovitskiy 등이 제안한 Self-Supervised Learning (�
      (예: 회전, 이동, 밝기 조절, 색상 변화, 블러 등)
      
 3. **가짜 라벨 부여**
-- 동일한 원본 패치에서 나온 모든 변형 이미지는 **같은 클래스 i** 로 취급한다.
-- 서로 다른 패치는 각각 다른 클래스 번호를 가진다.
+   - 동일한 원본 패치에서 나온 모든 변형 이미지는 **같은 클래스 i** 로 취급한다.
+   - 서로 다른 패치는 각각 다른 클래스 번호를 가진다.
 
 4. **CNN 학습**
-- CNN은 “이 이미지가 어떤 Exemplar(class i)에 속하는가?”를 예측하도록 학습한다.
-- 일반적인 **cross-entropy loss** 를 사용한다.
+   - CNN은 “이 이미지가 어떤 Exemplar(class i)에 속하는가?”를 예측하도록 학습한다.
+   - 일반적인 **cross-entropy loss** 를 사용한다.
 
  동일한 exemplar에서 transform이 적용된 patches들은 하나의 class i를 부여한다. 즉, unlabeled dataset으로부터 8000개의 exemplar를 추출했다면, 8000개의 클래스가 존재하고 신경망의 끝에서 8000차원의 softmax 연산을 수행한다. 이렇게 CNN을 학습함으로써 동일한 class내에 존재하는 상호정보량을 최대화 할 수 있다.
 
