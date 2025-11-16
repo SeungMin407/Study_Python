@@ -1,4 +1,5 @@
 # 🌳 의사결정나무(Decision Tree) - 분류 & 회귀 정리
+<img width="924" height="352" alt="image" src="https://github.com/user-attachments/assets/8947c28b-7a89-4232-a532-e3bac4f80e55" />
 
 ---
 
